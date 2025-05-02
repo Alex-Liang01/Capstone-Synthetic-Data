@@ -77,82 +77,23 @@ Each of these privacy metrics was ran on the different synthetic datasets to see
 
 ### Marginal Distributions Comparison
 
-#### KSComplements
 
-##### Rating
-
-###### Marginal Distributions Data
-<img width="704" alt="image" src="https://github.com/user-attachments/assets/3e720d86-54c7-4855-8931-d7b8d61c6ec4" />
-
-###### High Association Data
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/b61c96d4-058f-4284-af1d-b542f4221142" />
-
-###### Moderate Association Data
-<img width="705" alt="image" src="https://github.com/user-attachments/assets/86e69ecc-3454-43fa-aa7b-b06f7c9ab8ee" />
-
-###### Low Association Data
-<img width="671" alt="image" src="https://github.com/user-attachments/assets/c64b0a23-d32f-4f00-bef1-a6b726c6afbf" />
+###### Simulated Data from Marginal Distributions
+![image](https://github.com/user-attachments/assets/76add115-f91c-4229-8f4a-3be6485ee389)
 
 
-##### Date Of Birth
-
-###### Marginal Distributions Data
-<img width="706" alt="image" src="https://github.com/user-attachments/assets/72fd2f81-0475-4d72-a5d8-01a7cd5c9c72" />
 
 ###### High Association Data
-<img width="707" alt="image" src="https://github.com/user-attachments/assets/7e96dcf5-cde9-48d0-ad4d-175ff08f762e" />
+![image](https://github.com/user-attachments/assets/230d7113-aa78-4622-ba05-d74b1edc81ca)
+
 
 ###### Moderate Association Data
-<img width="705" alt="image" src="https://github.com/user-attachments/assets/50384a49-ca56-470e-8b56-d93087edb0ff" />
+![image](https://github.com/user-attachments/assets/1a7daafb-359c-4bd7-8330-a4a3f16d922d)
+
 
 ###### Low Association Data
-<img width="711" alt="image" src="https://github.com/user-attachments/assets/cf6ae432-f9df-4d01-9e10-9eec5ff11fc3" />
+![image](https://github.com/user-attachments/assets/572ff6fb-7457-4871-84e2-176b7d1cebd3)
 
-
-#### TVComplements
-
-##### Gender
-
-###### Marginal Distributions Data
-<img width="706" alt="image" src="https://github.com/user-attachments/assets/12df5375-d2de-4ee0-aee3-685d91399d19" />
-
-###### High Association Data
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/70f467ff-c099-473e-a6de-45aa07b65207" />
-
-###### Moderate Association Data
-<img width="706" alt="image" src="https://github.com/user-attachments/assets/238344bd-e247-4203-b34a-6f9c35a41862" />
-
-###### Low Association Data
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/2b2a4217-88b1-42cd-acbb-d4b056fb2f26" />
-
-##### Country Code
-
-###### Marginal Distributions Data
-<img width="704" alt="image" src="https://github.com/user-attachments/assets/49dcbfe3-84a3-4206-8b7e-4c36c9d7f9ea" />
-
-###### High Association Data
-<img width="708" alt="image" src="https://github.com/user-attachments/assets/63be4587-4e53-44a0-bc93-906ac5d1a0d1" />
-
-###### Moderate Association Data
-<img width="705" alt="image" src="https://github.com/user-attachments/assets/d14198ca-d9e3-45d5-bcae-958c76c9999f" />
-
-###### Low Association Data
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/87ae1681-781f-4c54-a502-3aacfb721dd0" />
-
-
-##### Language
-
-###### Marginal Distributions Data
-<img width="707" alt="image" src="https://github.com/user-attachments/assets/0f359743-ca10-47ec-8036-c2a0e6d5560e" />
-
-###### High Association Data
-<img width="708" alt="image" src="https://github.com/user-attachments/assets/750c8eac-b90a-4af9-94fa-ab421568aef9" />
-
-###### Moderate Association Data
-<img width="706" alt="image" src="https://github.com/user-attachments/assets/083bd56d-bac2-4b2e-8520-d383a974639f" />
-
-###### Low Association Data
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/5e29ac6e-4f96-4b89-978b-6dd9f97dc56d" />
 
 
 
