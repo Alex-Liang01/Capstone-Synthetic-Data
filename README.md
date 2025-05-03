@@ -122,4 +122,40 @@ Each of these privacy metrics was ran on the different synthetic datasets to see
 ##### Low Association Data
 ![image](https://github.com/user-attachments/assets/25391386-41fb-46bf-93f7-01986fee926c)
 
+### Machine Learning Fidelity
+
+#### Simulated Data from Marginal Distributions
+![image](https://github.com/user-attachments/assets/f2d235df-d7bd-4d58-86b8-f6044a2f808a)
+
+
+#### High Association Data
+![image](https://github.com/user-attachments/assets/4f5890b7-a89f-4404-9379-a27e86d556a4)
+
+
+#### Moderate Association Data
+![image](https://github.com/user-attachments/assets/407f42f0-cd7f-4ae0-99a2-6672dae450f9)
+
+
+#### Low Association Data
+![image](https://github.com/user-attachments/assets/3eb9fbe5-f151-4ee0-aa16-592d290023b0)
+
+### Privacy Metrics (Membership Inference Attack)
+
+##### Simulated Data from Marginal Distributions
+<img width="704" alt="image" src="https://github.com/user-attachments/assets/51eaf3e8-2ca6-49a8-aae9-d4ad3eb8ed21" />
+
+
+##### High Association Data
+
+<img width="709" alt="image" src="https://github.com/user-attachments/assets/cc59c533-4377-491d-bd24-4e0fb4ea7524" />
+
+
+##### Moderate Association Data
+![image](https://github.com/user-attachments/assets/e332398b-5e0b-47c7-a57e-bd5d27a5674b)
+
+
+
+##### Low Association Data
+<img width="694" alt="image" src="https://github.com/user-attachments/assets/12aadbe2-015a-4dc7-b7b4-56ed807c4d08" />
+
 
