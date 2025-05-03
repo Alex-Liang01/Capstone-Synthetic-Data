@@ -77,22 +77,22 @@ Each of these privacy metrics was ran on the different synthetic datasets to see
 
 ### Marginal Distributions Comparison
 
-
 ###### Simulated Data from Marginal Distributions
-![image](https://github.com/user-attachments/assets/76add115-f91c-4229-8f4a-3be6485ee389)
 
-
+![image](https://github.com/user-attachments/assets/2f7005ea-a7eb-4d99-b83e-f237da02d16b)
 
 ###### High Association Data
-![image](https://github.com/user-attachments/assets/230d7113-aa78-4622-ba05-d74b1edc81ca)
 
+![image](https://github.com/user-attachments/assets/c83dcf29-bde3-47a6-94d0-7d6ae6c38bd2)
 
 ###### Moderate Association Data
-![image](https://github.com/user-attachments/assets/1a7daafb-359c-4bd7-8330-a4a3f16d922d)
+![image](https://github.com/user-attachments/assets/927d2219-4e2d-4f9f-a2a3-f2f392c337f1)
 
 
 ###### Low Association Data
-![image](https://github.com/user-attachments/assets/572ff6fb-7457-4871-84e2-176b7d1cebd3)
+
+![image](https://github.com/user-attachments/assets/471666d7-746b-40f2-97ac-0cc3b6d57359)
+
 
 
 
