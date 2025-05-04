@@ -30,11 +30,11 @@ Looking at the results of the KSComplements and TVComplements for the synthetic 
 Overall, when looking at the marginal distributions of the synthetic datasets, GC performed the best across all features at all levels of samples sizes, missing data, and association strengths. The other two synthesizers performed quite poorly when handling categorical features with high cardinality.
 
 ## Pairwise Association Tests
-To compare the pairwise associations of the synthetic datasets to the simulated dataset, we used Pearson's correlation for numeric features and Cramer's V for categorical features.
-
+To compare the pairwise associations of the synthetic datasets to the simulated dataset, we used Pearson's correlation for numeric features and Cramer's V for categorical features. 
 ### Pearson's Correlation
 
-For the Pearson's Correlation tests between the synthetic dataset and simulated datasets, we compared the age and rating of the datasets. The importance here is the correlation of the synthetic datasets relative to that of the simulated dataset.
+For the Pearson's Correlation tests between the synthetic dataset and simulated datasets, we compared the age and rating of the datasets. The key metric here is the Pearson's Correlation of the synthetic datasets relative to the simulated dataset in red.
+
 
 #### Simulated Data from Marginal Distributions
 ![image](https://github.com/user-attachments/assets/1253e3af-2b4d-4ec9-ab60-292bb8c978db)
@@ -63,7 +63,8 @@ Overall, across all dataset sizes, missing percentages, and strength association
 
 ### Cramer's V
 
-For the Cramer's V tests between the synthetic dataset and simulated datasets, we compared the Country Code and Language of the datasets. Both of these features have high cardinality. The importance here is the Cramer's V of the synthetic datasets relative to that of the simulated dataset.
+For the Cramer's V tests between the synthetic dataset and simulated datasets, we compared the Country Code and Language of the datasets. Both of these features have high cardinality. The key metric here is the Cramer's V of the synthetic datasets relative to the simulated dataset in red.
+
 
 #### Simulated Data from Marginal Distributions
 ![image](https://github.com/user-attachments/assets/19a1b87c-2238-4043-b2ca-391a4817210e)
@@ -91,7 +92,7 @@ Overall, GC consistently performed the worst out of the three methods across all
 
 ## Machine Learning Fidelity (Multivariate Associations)
 
-For the multivariate tests between the synthetic dataset and simulated datasets, we used random forests to make predictions on rating. The importance here is the mean absolute error (MAE) of the synthetic datasets relative to that of the simulated dataset.
+For the multivariate tests between the synthetic dataset and simulated datasets, we used random forests to make predictions on rating. The key metric here is the mean absolute error (MAE) of the synthetic datasets relative to the simulated dataset in red.
 
 ### Simulated Data from Marginal Distributions
 ![image](https://github.com/user-attachments/assets/f2d235df-d7bd-4d58-86b8-f6044a2f808a)
