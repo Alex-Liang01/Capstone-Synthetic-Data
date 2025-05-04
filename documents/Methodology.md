@@ -51,9 +51,7 @@ To do this, we used random forest regression using the LightGBM package. Random 
 Now with all of the data fidelity metrics described, we used four privacy metrics to measure the privacy of the synthetic data compared to the simulated data. 
 
 ## Privacy Metrics
-The four privacy metrics we used to test the privacy protection of PII in the synthetic datasets are: Disclosure Protection (DP), Nearest Neighbor Distance Ratio (NNDR), Nearest Neighbor Adversarial Accuracy (NNAA) and Membership Inference Attack (MIA).
-
-Disclosure protection measures the risk of sensitive information being disclosed in the synthetic data. DP is a score bounded from 0 to 1 with higher scores closer to 1 indicating strong privacy while values close to 0 have high disclosure risk.
+The three privacy metrics we used to test the privacy protection of PII in the synthetic datasets are: Nearest Neighbor Distance Ratio (NNDR), Nearest Neighbor Adversarial Accuracy (NNAA) and Membership Inference Attack (MIA).
 
 Nearest Neighbor Distance Ratio evaluates how close synthetic data points are compared to the simulated data points by comparing distances. NNDR is a ratio from score 0 to 1 with higher scores indicating stronger privacy while values close to 0 have higher disclosure risk. It compares distances to the nearest vs. the distance to the second nearest neighbor.
 
