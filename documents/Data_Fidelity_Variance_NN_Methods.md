@@ -7,22 +7,22 @@ The neural network methods CTGAN and TVAE have inherent randomness in them when 
 Boxplots were used on the Pearson's Correlation between age and rating from each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real correlation from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
-<img width="704" alt="image" src="https://github.com/user-attachments/assets/6c7f8b82-c102-4326-b0fe-d51c69a4d895" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/6c7f8b82-c102-4326-b0fe-d51c69a4d895" />
 
 Looking at the boxplot of the Pearson's Correlation between age and rating across 100 synthetic datasets trained on the simulated data that was created using provided marginal distributions, it is observed that the CTGAN method consistently performs poorly at small sample sizes with the whiskers of the boxplots never being near the simulated data's correlation. At sample sizes greater than 25,000 rows, it is observed that the CTGAN method performs much closer to that of the simulated dataset indicating that sample size is very important for CTGAN. Looking at the correlation of the TVAE methods, it is observed that generally it is much more inline with that of the simulated dataset except at 20% missing across all tested sample sizes where it performed quite poorly especially at 20% 25,000 rows.  
 
 ### High Association Data
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/e97b1649-c2e6-4c4f-91b8-d53d75418191" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/e97b1649-c2e6-4c4f-91b8-d53d75418191" />
 
 Looking at the boxplot of the Pearson's Correlation between age and rating across 100 synthetic datasets trained on the simulated data that was created with enforced high associations between variables, it is observed that both the CTGAN and TVAE method consistently performs poorly with the whiskers of the boxplots often being far from the simulated data's correlation. The only time the synthesizers performed well was TVAE at 10% missing 10,000 rows where it is observed that the boxplot of the TVAE method is in line with that of the simulated dataset.
 
 ### Moderate Association Data
-<img width="709" alt="image" src="https://github.com/user-attachments/assets/f219c43a-0cc5-45ef-80a7-446226304d27" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/f219c43a-0cc5-45ef-80a7-446226304d27" />
 
 Looking at the boxplot of the Pearson's Correlation between age and rating across 100 synthetic datasets trained on the simulated data that was created with enforced moderate associations between variables, it is observed that the CTGAN method consistently performs poorly with the whiskers of the boxplots never being near the simulated data's correlation. Looking at the correlation of the TVAE methods, it is observed that it is much more inline with that of the simulated dataset at smaller sample sizes. At larger sample sizes the TVAE synthesized datasets' correlation deviates further away from that of the simulated dataset. 
 
 ### Low Association Data
-<img width="716" alt="image" src="https://github.com/user-attachments/assets/a68f36ea-a49b-4393-8a59-94d8a98328ce" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a68f36ea-a49b-4393-8a59-94d8a98328ce" />
 
 Looking at the boxplot of the Pearson's Correlation between age and rating across 100 synthetic datasets trained on the simulated data that was created with enforced low associations between variables, it is observed that the CTGAN method generally performs poorly with the whiskers of the boxplots only being near the simulated data's correlation at 0% missing 50,000 rows. Looking at the correlation of the TVAE methods, it is observed that like CTGAN method, it performs much worst than the other datasets with stronger association with it's boxplot's whiskers only being near the simulated dataset at 20% missing, 10,000 rows. Overall, it is observed that at low dependency between variables in the simulated dataset, the CTGAN and TVAE perform much worst with the whiskers of the boxplots becoming larger.
 
@@ -34,21 +34,21 @@ Overall, the CTGAN method perfomed quite poorly at transfering over the correlat
 Boxplots were used on the Cramer's V between language and country code from each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real Cramer's V from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
-<img width="716" alt="image" src="https://github.com/user-attachments/assets/3829b5dc-5624-4744-ad79-ba24756570fe" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/3829b5dc-5624-4744-ad79-ba24756570fe" />
 
 Looking at the boxplot of Cramer's V between Country Code and Language across 100 synthetic datasets trained on the simulated data that was created using provided marginal distributions, it is observed that both methods generally fail to get Cramer's V similar to the simulated dataset. The CTGAN method is quite consistent with it's whiskers generally being very small but it still has a fair number of outliers. It is observed that CTGAN performs much better once the sample size increases from 10,000 rows to 25,000 rows. TVAE is quite inconsistent with the whiskers often being quite long.
 
 ### High Association Data
-<img width="714" alt="image" src="https://github.com/user-attachments/assets/4c42cfd4-9cdb-462a-a9bb-63d6b70f363a" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/4c42cfd4-9cdb-462a-a9bb-63d6b70f363a" />
 
 Looking at the boxplot of Cramer's V between Country Code and Language across 100 synthetic datasets trained on the simulated data that was created with enforced high associations between variables, it is observed that once again CTGAN is very dependent on sample size with it performing very similarly to that of the simulated dataset at high sample sizes. CTGAN's whiskers are very small but their are still outliers meaning that the sampled datasets are often very similar to each other in terms of Cramer's V. Looking at TVAE, it is observed that it's whiskers are much larger meaning that it is quite inconsistent when sampling synthesized datasets from a trained synthesizer. Overall, CTGAN performance is much more consistent with smaller whiskers and closer Cramer's V to the simulated dataset than TVAE.
 
 ### Moderate Association Data
-<img width="718" alt="image" src="https://github.com/user-attachments/assets/862fed11-5a62-4e72-8997-93dce149ec4d" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/862fed11-5a62-4e72-8997-93dce149ec4d" />
 
 Looking at the boxplot of Cramer's V between Country Code and Language across 100 synthetic datasets trained on the simulated data that was created with enforced moderate associations between variables, it is observed that once again CTGAN is very dependent on sample size with it performing very similarly to that of the simulated dataset at high sample sizes. Looking at TVAE, it is observed that it's whiskers are much larger with it's whiskers being even larger than that of the high association simulated dataset meaning that TVAE is very inconsistent when working with datasets that have moderate associations between categorical features. Furthermore, it is observed that TVAE has a lot of outliers with some being very far away from the whiskers of their respective boxplot showing that TVAE is not reliable when synthesizing from a dataset that has moderate associations between variables.
 ### Low Association Data
-<img width="719" alt="image" src="https://github.com/user-attachments/assets/f7279259-897b-4920-9c01-6661997e81e5" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/f7279259-897b-4920-9c01-6661997e81e5" />
 Looking at the boxplot of Cramer's V between Country Code and Language across 100 synthetic datasets trained on the simulated data that was created with enforced low associations between variables, it is observed that once again CTGAN is very dependent on sample size with it performing very similarly to that of the simulated dataset at high sample sizes. Looking at TVAE, it is observed that it's whiskers are much larger with it's whiskers being even larger than that of the high association simulated dataset meaning that TVAE is very inconsistent when working with datasets that have moderate associations between categorical features. Furthermore, it is observed that TVAE has a lot of outliers with some being very far away from the whiskers of their respective boxplot showing that TVAE is not reliable when synthesizing from a dataset that has low associations between variables.
 
 ###  Cramer's V Boxplots Overall
@@ -59,22 +59,22 @@ Overall, the CTGAN method needs a large sample size in order to accurately trans
 Boxplots were used on the MAE from the prediction on ratings using random forest regression each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real correlation from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/2e65213c-c625-4d7e-a4d6-c19f711b30d3" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/2e65213c-c625-4d7e-a4d6-c19f711b30d3" />
 
 Looking at the boxplot of MAE from the prediction on ratings using Random Forest Regression across 100 synthetic datasets trained on the simulated data that was created from the provided marginal distributions, it is observed that CTGAN performs quite poorly but is very consistent with its whiskers being quite small. Looking at TVAE it is observed that it's MAE is often quite similar to that of the simulated data. Like with CTGAN, the boxplots of the TVAE synthetic datasets has quite small whiskers showing that they both are consistent in sampling synthetic datasets with consistent multivariate properties from a trained synthesizer. Overall the CTGAN method often fails to transfer over the multivariate properties of the simulated data over to the synthetic data while the TVAE method is better at transfering over the multivariate properties of the simulated data over to the synthetic data.
 
 ### High Association Data
-<img width="713" alt="image" src="https://github.com/user-attachments/assets/436d4dbc-5cbe-4d3c-84f4-d15481313a31" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/436d4dbc-5cbe-4d3c-84f4-d15481313a31" />
 
 Looking at the boxplot of MAE from the prediction on ratings using Random Forest Regression across 100 synthetic datasets trained on the simulated data that was created with enforced high associations between variables, it is observed that CTGAN performs quite poorly but is very consistent with its whiskers being quite small. Looking at TVAE it is observed that it's MAE is often quite similar to that of the simulated data. Like with CTGAN, the boxplots of the TVAE synthetic datasets has quite small whiskers showing that it is they both are consistent in sampling synthetic datasets with consistent multivariate properties from a trained synthesizer. Overall the CTGAN method often fails to transfer over the multivariate properties of the simulated data over to the synthetic data while the TVAE method is better at transfering over the multivariate properties of the simulated data over to the synthetic data.
 
 ### Moderate Association Data
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/f55436a6-b605-412f-8666-0053950133aa" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/f55436a6-b605-412f-8666-0053950133aa" />
 
 Looking at the boxplot of MAE from the prediction on ratings using Random Forest Regression across 100 synthetic datasets trained on the simulated data that was created with enforced moderate associations between variables, it is observed that CTGAN performs quite poorly but is very consistent with its whiskers being quite small. Looking at TVAE it is observed that it's MAE is often quite similar to that of the simulated data. Like with CTGAN, the boxplots of the TVAE synthetic datasets has quite small whiskers showing that it is they both are consistent in sampling synthetic datasets with consistent multivariate properties from a trained synthesizer. Overall the CTGAN method often fails to transfer over the multivariate properties of the simulated data over to the synthetic data while the TVAE method is better at transfering over the multivariate properties of the simulated data over to the synthetic data. 
 
 ### Low Association Data
-<img width="711" alt="image" src="https://github.com/user-attachments/assets/d665044a-5fd5-4e5e-90d1-b9eb9bf9be66" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/d665044a-5fd5-4e5e-90d1-b9eb9bf9be66" />
 
 Looking at the boxplot of MAE from the prediction on ratings using Random Forest Regression across 100 synthetic datasets trained on the simulated data that was created with enforced moderate associations between variables, it is observed that CTGAN performs quite poorly but is very consistent with its whiskers being quite small. Looking at TVAE it is observed that it's MAE is often quite similar to that of the simulated data. Like with CTGAN, the boxplots of the TVAE synthetic datasets has quite small whiskers showing that it is they both are consistent in sampling synthetic datasets with consistent multivariate properties from a trained synthesizer. Looking at the difference when there is no missing data in the simulated dataset compared to when there is missing data in the simulated data, it is observed that TVAE performs worst when there is no missing data in the simulated dataset. Overall the CTGAN method often fails to transfer over the multivariate properties of the simulated data over to the synthetic data while the TVAE method is better at transfering over the multivariate properties of the simulated data over to the synthetic data.
 
