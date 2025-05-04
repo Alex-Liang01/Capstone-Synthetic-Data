@@ -1,4 +1,4 @@
-# Multiple Iterations of Synthetic Datasets 
+# Data Fidelity Variance of Neural Network methods
 
 The neural network methods CTGAN and TVAE have inherent randomness in them when sampling data from trained synthesizers. To investigate if these heavily affect the results of the synthetic datasets, 100 synthetic datasets using these two synthesizers were generated for each of the explored features of different sample sizes, association strength, and missing data.
 
