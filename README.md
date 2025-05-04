@@ -13,7 +13,7 @@ To measure the fidelity of the synthetic data compared to the simulated data the
 
 To measure the variance of the synthetic datasets trained with neural networks (CTGAN and TVAE), 100 synthetic datasets were generated from trained synthesizers across the different simulated datasets to measure if the fidelity of the synthetic data is consistent across different runs.
 
-To measure the privacy protection of the synthetic datasets we applied several privacy protection metrics such as: Disclosure Protection (DP), Nearest Neighbor Distance Ratio (NNDR), Nearest Neighbor Adversarial Accuracy (NNAA) and Membership Inference Attack (MIA). 
+To measure the privacy protection of the synthetic datasets we applied several privacy protection metrics such as: Nearest Neighbor Distance Ratio (NNDR), Nearest Neighbor Adversarial Accuracy (NNAA) and Membership Inference Attack (MIA). 
 
 This project aims to determine if synthetic data is a suitable alternative for real data that allows cross-functional teams to share real data insights without leaking PII.  
 
