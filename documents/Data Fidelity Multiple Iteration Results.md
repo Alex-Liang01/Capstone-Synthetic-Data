@@ -1,10 +1,10 @@
 # Multiple Iterations of Synthetic Datasets 
 
-The neural network methods CTGAN and TVAE have inherent randomness in them when sampling data from trained synthesizers. To investigate if these heavily affect the results of the synthetic datasets, 100 iterations of synthetic datasets were generated for each of the explored features of different sample sizes, association strength, and missing data.
+The neural network methods CTGAN and TVAE have inherent randomness in them when sampling data from trained synthesizers. To investigate if these heavily affect the results of the synthetic datasets, 100 synthetic datasets using these two synthesizers were generated for each of the explored features of different sample sizes, association strength, and missing data.
 
 ## Pearson's Correlation Boxplots
 
-Boxplots were done on the Pearson's Correlation between age and rating from each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real correlation from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
+Boxplots were used on the Pearson's Correlation between age and rating from each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real correlation from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
 <img width="704" alt="image" src="https://github.com/user-attachments/assets/6c7f8b82-c102-4326-b0fe-d51c69a4d895" />
@@ -31,6 +31,7 @@ Overall, the CTGAN method perfomed quite poorly at transfering over the correlat
 
 
 ## Cramer's V Boxplots
+Boxplots were used on the Cramer's V between language and country code from each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real Cramer's V from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/3829b5dc-5624-4744-ad79-ba24756570fe" />
@@ -55,6 +56,7 @@ Looking at the boxplot of Cramer's V between Country Code and Language across 10
 Overall, the CTGAN method needs a large sample size in order to accurately transfer over the association between categories with high cardinality with it performing quite poorly at smaller sample sizes of 10,000 rows. The TVAE method is quite inconsistent when sampling synthetic datasets from a trained synthesizer with the whisker's of it's boxplots often being very wide especially at low and moderate dependencies making it unreliable if the dataset that needs to be synthesized has columns with multiple high cardinality features with low or moderate association. 
 
 ## Machine Learning Fidelity Boxplots
+Boxplots were used on the MAE from the prediction on ratings using random forest regression each of the different datasets to see if the variance of CTGAN, and TVAE is too large to be used. The real correlation from the dataset the synthetic datasets were trained on are in Orange to compare the performance of the synthetic datasets to the real dataset. 
 
 ### Simulated Data from Marginal Distributions
 <img width="710" alt="image" src="https://github.com/user-attachments/assets/2e65213c-c625-4d7e-a4d6-c19f711b30d3" />
@@ -82,6 +84,6 @@ Overall, it is observed that the CTGAN method is worst than the TVAE method when
 
 ## Overall Findings from Multiple Iterations of Synthetic Data
 
-Overall, the CTGAN method performed quite poorly at transfering over the correlations between rating and age, as well as multivariate properties used to predict rating across all association levels, sample sizes and missing data percentages. It performed quite well at transfering over categorical relationships between features with high cardinality but only when it had a large sample size of at least 50,000 rows. The TVAE method performance is unreliable in transfering over categorical relationships between features with high cardinality as the boxplots of the method was quite large. However, there is a trade off with it performing very well in terms of transfering over multivariate properties from the simulated dataset over to the synthetic datasets. This shows that the TVAE method is decent in terms of data fidelity but leads into issues with the synthetic dataset being too similar to that of the simulated dataset leading to privacy issues.
+Overall, the CTGAN method performed quite poorly at transfering over the correlations between rating and age, as well as multivariate properties used to predict rating across all association levels, sample sizes and missing data percentages. It performed quite well at transfering over categorical relationships between features with high cardinality but only when it had a large sample size of at least 50,000 rows. There is not much variance in the consistency of the CTGAN method as most of the whiskers of it's boxplots were small. The TVAE method performance is unreliable in transfering over categorical relationships between features with high cardinality as the boxplots of the method was quite large. However, there is a trade off with it performing very well in terms of transfering over multivariate properties from the simulated dataset over to the synthetic datasets. This shows that the TVAE method is decent in terms of data fidelity but leads into issues with the synthetic dataset being too similar to that of the simulated dataset leading to privacy issues.
 
 
