@@ -4,7 +4,7 @@ To investigate the feasability of synthetic data as a way to handle data goveran
 ## Simulation
 The dataset we simulated contains the following features: Id, HashedId, ArcsId, Country Code, date of birth, email addresses, language, rating, and gender. Most of these features can be directly linked to an individual (Id, HashedId, ArcsId, email addresses) as they are unique identifiers while some of the other features could be possibly combined to identify an individual (date of birth, language, gender, and rating) showing the importance of privacy protection in these features. 
 
-The datasets we simulated were a dataset based on marginal distributions, a dataset with high dependencies between features, a dataset with moderate dependencies between features, and a dataset with low dependencies between features. For the high, moderate, and low dependency datasets, we enforced one to one mappings between variables before randomly replacing a specified percentage of values based on the dependency strength of the dataset with other existing values from the same column to simulate varying levels of association.
+The datasets we simulated were a dataset based on marginal distributions, a dataset with artificially enforced high dependencies between features, a dataset with artificially enforced moderate dependencies between features, and a dataset with artificially enforced low dependencies between features. For the high, moderate, and low dependency datasets, we enforced one to one mappings between variables before randomly replacing a specified percentage of values based on the dependency strength of the dataset with other existing values from the same column to simulate varying levels of association.
 
 To verify the importance of sample size in the synthetic data synthesizers we sampled each of the above datasets to test how the synthesizers would perform in terms of data fidelity and privacy with a training sample size of 10,000 rows, 25,000 rows and 50,000 rows. To verify how the synthesizers perform when there is missing data we tested different training sets with various amounts of missing data of 0%, 10%, and 20% in the rows. For the missing data, we enforced the missing data to only exist in the features: Country Code, date of birth and gender.
 
@@ -21,7 +21,8 @@ Tabular Variational Autoencoder is a neural network that uses an encoder and dec
 
 With these three synthetic data synthesizers, we then fed in the 36 different datasets with varying amounts of missing data, sample sizes, and association strengths resulting in 108 synthetic datasets each of which have a varying amounts of missing data, sample sizes, and association strengths. To test the data fidelity of the synthetic datasets, we then tested the marginal distribution of the synthetic data sets compared to the simulated datasets it was trained on.
 
-## Marginal Distributions of Synthetic data
+## Data Fidelity Tests
+### Marginal Distributions of Synthetic data
 
 To test the marginal distribution of the synthetic data compared to the simulated datasets it was trained on, we used two metrics for numeric features and categorical features respectively: the KSComplement and TVComplement. This means that we used the TVComplement to benchmark the performance for the numeric features of Rating and Date Of Birth while KSComplement was used to measure the performance for the categorical features: Gender, Country Code, and Language. 
 
@@ -31,7 +32,7 @@ The TVComplement computes the total variation distance between the synthetic dat
 
 To further test the data fideility of the synthetic datasets, we then tested the pairwise associations between the features in the synthetic dataset compared to the simulated datasets.
 
-## Pairwise Association Tests
+### Pairwise Association Tests
 
 To compare the pairwise assocations between the synthetic datasets compared to the simulated datasets, we used the common Pearson's Correlation for numeric features, and Cramer's V for categorical features. For Pearson's Correlation, we used the features of rating and age while for Cramer's V, we compared Country Code and language for the synthetic dataset compared to simulated datasets.
 
@@ -41,13 +42,13 @@ Cramer's V is a metric bounded from 0 to 1 where values closer to 0 means weaker
 
 To further test the data fidelity of the synthetic datasets, we then used machine learning to make predictions on rating to measure the multivariate associations between the synthetic data and simulated data.
 
-## Machine Learning Fidelity
+### Machine Learning Fidelity
 
 To test the multivariate assocations between the synthetic data and simulated data, we used machine learning as if the synthetic data carries over the properties of the simulated dataset well, the results of the synthetic dataset should be similar to the simulated dataset.
 
 To do this, we used random forest regression using the LightGBM package. Random forests are an ensemble of trees where each individual tree is trained using bootstraping and a random subset of features. As a result, each individual tree will make slightly different predictions which is then averaged out to get the prediction for the entire random forest. The loss function we used was the mean absolute error so that the results are easily interpreable. We used cross validation with five folds to prevent overfitting while utilizing the entire dataset in order to train the tree. No hyperparameter optimization was done so that the results can be compared fairly between the synthetic datasets and the simulated datasets that they were trained on with varying amounts of missing data, sample sizes and asssociation strengths.
 
-Now with all of the data fidelity metrics described, we used four privacy metrics to measure the privacy of the synthetic data compared to the simulated data.
+Now with all of the data fidelity metrics described, we used four privacy metrics to measure the privacy of the synthetic data compared to the simulated data. 
 
 ## Privacy Metrics
 The four privacy metrics we used to test the privacy protection of PII in the synthetic datasets are: Disclosure Protection (DP), Nearest Neighbor Distance Ratio (NNDR), Nearest Neighbor Adversarial Accuracy (NNAA) and Membership Inference Attack (MIA).
@@ -58,6 +59,6 @@ Nearest Neighbor Distance Ratio evaluates how close synthetic data points are co
 
 Nearest Neighbor Adversial Accuracy evaluates how well an adversary can distinguish real and synthetic data using a nearest neighbor classifier. NNAA is a score from 0 to 1 with lower scores closer to 0 indicating better privacy. Values greater than or equal to 0.5 indicate high privacy loss. 
 
-Membership Inference Attack evaluates whether an adversarycan determine if a specific dat point was part of the training set used to create the synthetic data. MIA is a score from 0 to 1 with lower scores less than 0.5 indicating excellent privacy but poor accuracy. Values that are greater than or equal to 0.5 indicate poor privacy and excellent accuracy.
+Membership Inference Attack evaluates whether an adversary can determine if a specific dat point was part of the training set used to create the synthetic data. MIA is a score from 0 to 1 with lower scores less than 0.5 indicating excellent privacy but poor accuracy. Values that are greater than or equal to 0.5 indicate poor privacy and excellent accuracy.
 
 Each of these privacy metrics was ran on the different synthetic datasets to see if any of the synthetic data synthesizers perform better or worst in terms of privacy when there are varying amounts of missing data, sample sizes and association strengths in the simulated dataset that it was trained on.
