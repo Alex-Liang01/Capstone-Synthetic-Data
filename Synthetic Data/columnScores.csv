@@ -1,0 +1,55 @@
+Property,Score,df_type,synthesizer_type
+Column Shapes,0.9664999999999999,10000 row 0 missing,GC
+Column Pair Trends,0.8622224145999606,10000 row 0 missing,GC
+Column Shapes,0.9676936814979564,10000 row 10 missing,GC
+Column Pair Trends,0.8687659706230453,10000 row 10 missing,GC
+Column Shapes,0.9643703591227816,10000 row 20 missing,GC
+Column Pair Trends,0.8613715263745473,10000 row 20 missing,GC
+Column Shapes,0.9721466666666666,25000 row 0 missing,GC
+Column Pair Trends,0.8731405123432392,25000 row 0 missing,GC
+Column Shapes,0.9740548331250606,25000 row 10 missing,GC
+Column Pair Trends,0.8788699647100794,25000 row 10 missing,GC
+Column Shapes,0.9726535989973034,25000 row 20 missing,GC
+Column Pair Trends,0.8489076836274858,25000 row 20 missing,GC
+Column Shapes,0.9693233333333335,50000 row 0 missing,GC
+Column Pair Trends,0.8771010647866522,50000 row 0 missing,GC
+Column Shapes,0.9697218264712477,50000 row 10 missing,GC
+Column Pair Trends,0.877112145009264,50000 row 10 missing,GC
+Column Shapes,0.967846560221771,50000 row 20 missing,GC
+Column Pair Trends,0.8770765635583776,50000 row 20 missing,GC
+Column Shapes,0.8419166666666666,10000 row 0 missing,CTGAN
+Column Pair Trends,0.7480866483765916,10000 row 0 missing,CTGAN
+Column Shapes,0.8477991453243304,10000 row 10 missing,CTGAN
+Column Pair Trends,0.7460858043451527,10000 row 10 missing,CTGAN
+Column Shapes,0.8680474194266607,10000 row 20 missing,CTGAN
+Column Pair Trends,0.7653812884708031,10000 row 20 missing,CTGAN
+Column Shapes,0.8786666666666666,25000 row 0 missing,CTGAN
+Column Pair Trends,0.7753103805532202,25000 row 0 missing,CTGAN
+Column Shapes,0.8484268012795028,25000 row 10 missing,CTGAN
+Column Pair Trends,0.7334857220289434,25000 row 10 missing,CTGAN
+Column Shapes,0.8531428828031645,25000 row 20 missing,CTGAN
+Column Pair Trends,0.7473383438803952,25000 row 20 missing,CTGAN
+Column Shapes,0.84382,50000 row 0 missing,CTGAN
+Column Pair Trends,0.7547697072967917,50000 row 0 missing,CTGAN
+Column Shapes,0.8561438477800546,50000 row 10 missing,CTGAN
+Column Pair Trends,0.7573686628367712,50000 row 10 missing,CTGAN
+Column Shapes,0.8439197134701373,50000 row 20 missing,CTGAN
+Column Pair Trends,0.7528855254651224,50000 row 20 missing,CTGAN
+Column Shapes,0.8795166666666668,10000 row 0 missing,TVAE
+Column Pair Trends,0.6320563524950404,10000 row 0 missing,TVAE
+Column Shapes,0.8860822794973705,10000 row 10 missing,TVAE
+Column Pair Trends,0.7641868366637959,10000 row 10 missing,TVAE
+Column Shapes,0.8675859292184637,10000 row 20 missing,TVAE
+Column Pair Trends,0.6853502322856239,10000 row 20 missing,TVAE
+Column Shapes,0.8921133333333331,25000 row 0 missing,TVAE
+Column Pair Trends,0.71759083971798,25000 row 0 missing,TVAE
+Column Shapes,0.8972795431287387,25000 row 10 missing,TVAE
+Column Pair Trends,0.814236233281716,25000 row 10 missing,TVAE
+Column Shapes,0.8781643555604663,25000 row 20 missing,TVAE
+Column Pair Trends,0.7513112500376392,25000 row 20 missing,TVAE
+Column Shapes,0.9241733333333332,50000 row 0 missing,TVAE
+Column Pair Trends,0.8658128398748544,50000 row 0 missing,TVAE
+Column Shapes,0.9337389745947801,50000 row 10 missing,TVAE
+Column Pair Trends,0.8757798725321242,50000 row 10 missing,TVAE
+Column Shapes,0.9142963140758442,50000 row 20 missing,TVAE
+Column Pair Trends,0.839232316524332,50000 row 20 missing,TVAE
