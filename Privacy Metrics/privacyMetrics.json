@@ -1,0 +1,5 @@
+{
+    "nndr"      : {},
+    "nnaa"      : {"n_resample": 30},
+    "mia"  : {"num_eval_iter": 5}
+}
